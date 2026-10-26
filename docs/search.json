@@ -1,0 +1,135 @@
+[
+  {
+    "objectID": "listings.html",
+    "href": "listings.html",
+    "title": "Listings in Quarto",
+    "section": "",
+    "text": "A Quarto Listing creates an index of related pages. It is useful for a portfolio because each project can be stored in its own file while Quarto automatically organizes the collection.\n\n\nListings help visitors:\n\nScan several projects quickly\nFilter projects by category\nRead a short description before opening a page\nFind the most recent work first\n\n\n\n\nThe listing on this page is created with the following YAML:\nlisting:\n  contents: projects\n  type: grid\n  fields: [title, description, date, categories]\n  sort: \"date desc\"\n  filter-ui: [categories]\nThe contents option tells Quarto to read pages from the projects/ folder. The other options control the layout, displayed metadata, sorting, and filtering.\n\n\n\nEach project page can contain front matter like this:\n---\ntitle: \"Avenue Shabu: Growth in Repeat Guests\"\ndescription: \"A CRM and customer analytics project about profitable repeat visits.\"\ndate: 2026-10-23\ncategories: [CRM, retention, customer analytics]\n---\nAdding another project only requires adding another QMD file to the projects/ folder."
+  },
+  {
+    "objectID": "listings.html#why-use-a-listing",
+    "href": "listings.html#why-use-a-listing",
+    "title": "Listings in Quarto",
+    "section": "",
+    "text": "Listings help visitors:\n\nScan several projects quickly\nFilter projects by category\nRead a short description before opening a page\nFind the most recent work first"
+  },
+  {
+    "objectID": "listings.html#listing-configuration",
+    "href": "listings.html#listing-configuration",
+    "title": "Listings in Quarto",
+    "section": "",
+    "text": "The listing on this page is created with the following YAML:\nlisting:\n  contents: projects\n  type: grid\n  fields: [title, description, date, categories]\n  sort: \"date desc\"\n  filter-ui: [categories]\nThe contents option tells Quarto to read pages from the projects/ folder. The other options control the layout, displayed metadata, sorting, and filtering."
+  },
+  {
+    "objectID": "listings.html#project-metadata",
+    "href": "listings.html#project-metadata",
+    "title": "Listings in Quarto",
+    "section": "",
+    "text": "Each project page can contain front matter like this:\n---\ntitle: \"Avenue Shabu: Growth in Repeat Guests\"\ndescription: \"A CRM and customer analytics project about profitable repeat visits.\"\ndate: 2026-10-23\ncategories: [CRM, retention, customer analytics]\n---\nAdding another project only requires adding another QMD file to the projects/ folder."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Frank Renn | Digital Marketing Portfolio",
+    "section": "",
+    "text": "I am a digital marketing professional and Master of Science in Digital Marketing student. I connect customer behavior, marketing technology, and business outcomes to help organizations make better decisions."
+  },
+  {
+    "objectID": "index.html#digital-marketing-analytics-and-crm",
+    "href": "index.html#digital-marketing-analytics-and-crm",
+    "title": "Frank Renn | Digital Marketing Portfolio",
+    "section": "",
+    "text": "I am a digital marketing professional and Master of Science in Digital Marketing student. I connect customer behavior, marketing technology, and business outcomes to help organizations make better decisions."
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Frank Renn | Digital Marketing Portfolio",
+    "section": "About me",
+    "text": "About me\nMy interests are digital analytics, customer relationship management, lifecycle marketing, and retention. I enjoy turning a broad business question into measurable events, useful customer segments, and a practical test."
+  },
+  {
+    "objectID": "index.html#career-aspirations",
+    "href": "index.html#career-aspirations",
+    "title": "Frank Renn | Digital Marketing Portfolio",
+    "section": "Career aspirations",
+    "text": "Career aspirations\nI am interested in future roles in:\n\nDigital analytics\nCRM and lifecycle marketing\nMarketing operations\nCustomer intelligence and retention\n\nI want to work on teams that use data and experimentation to improve the customer experience and long-term customer value."
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "Frank Renn | Digital Marketing Portfolio",
+    "section": "Skills",
+    "text": "Skills\n\nGoogle Analytics 4 and Google Tag Manager\nEvent design, UTM tracking, tag implementation, and QA\nToast Guestbook, CRM, and loyalty concepts\nRFM and lifecycle segmentation\nEmail and SMS campaign measurement\nCustomer satisfaction research and survey design\nRetention analysis and treatment/holdout testing\nDashboard development and stakeholder communication"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Frank Renn | Digital Marketing Portfolio",
+    "section": "Education",
+    "text": "Education\n\nMaster of Science in Digital Marketing\nCurrent program · 2026–2027\nMy coursework and projects focus on digital measurement, customer analytics, CRM, marketing strategy, research methods, and communicating findings to decision makers."
+  },
+  {
+    "objectID": "index.html#submission-links",
+    "href": "index.html#submission-links",
+    "title": "Frank Renn | Digital Marketing Portfolio",
+    "section": "Submission links",
+    "text": "Submission links\n\nPublished portfolio homepage\nGitHub repository"
+  },
+  {
+    "objectID": "projects/customer-research.html",
+    "href": "projects/customer-research.html",
+    "title": "Customer Research and Retention",
+    "section": "",
+    "text": "Customer Research and Retention\nThis project focuses on survey design, construct mapping, customer segmentation variables, and connecting customer feedback with retention decisions."
+  },
+  {
+    "objectID": "projects/avenue-shabu.html",
+    "href": "projects/avenue-shabu.html",
+    "title": "Avenue Shabu: Growth in Repeat Guests",
+    "section": "",
+    "text": "Avenue Shabu: Growth in Repeat Guests\nThis MSDM culminating experience project connects Toast/POS data, customer experience research, CRM, loyalty, email/SMS campaigns, and retention measurement.\nThe goal is to identify practical interventions that increase repeat-visit frequency and customer value while considering campaign and reward costs."
+  },
+  {
+    "objectID": "projects/digital-analytics.html",
+    "href": "projects/digital-analytics.html",
+    "title": "Digital Analytics and Tag QA",
+    "section": "",
+    "text": "Digital Analytics and Tag QA\nThis project focuses on translating measurement requirements into reliable events, tags, parameters, and conversion checks."
+  },
+  {
+    "objectID": "css.html",
+    "href": "css.html",
+    "title": "CSS and SCSS in Quarto",
+    "section": "",
+    "text": "CSS controls the appearance of a website. It can change colors, fonts, spacing, borders, layout, and responsive behavior.\nSCSS is an extension of CSS. It allows the author to use variables and other features that make a stylesheet easier to maintain.\n\n\nThe _quarto.yml file applies styles.scss to the entire website:\nformat:\n  html:\n    theme:\n      - cosmo\n      - styles.scss\nThe stylesheet uses variables for reusable design decisions:\n/*-- scss:defaults --*/\n\n$primary: #0f766e;\n$body-bg: #fffdf8;\n$body-color: #243b53;\n\n\n\nThe following SCSS creates a reusable card style:\n/*-- scss:rules --*/\n\n.simple-card {\n  background: #ffffff;\n  border: 1px solid #d9e2ec;\n  border-radius: 8px;\n  padding: 1rem;\n}\nThe class can then be used in a QMD file:\n::: {.simple-card}\n### A simple card\n\nThis content receives the reusable style.\n:::\n\n\nThis card uses the .simple-card class from styles.scss.\n\n\n\n\n\nIt creates a consistent appearance across pages.\nIt makes headings and sections easier to scan.\nIt helps important links and notes stand out.\nIt allows the layout to work on different screen sizes.\nIt separates content from presentation.\n\n\n\n\nThe comments below are required by newer versions of Quarto when an SCSS file is used as a theme layer:\n/*-- scss:defaults --*/\n/* variables go here */\n\n/*-- scss:rules --*/\n/* style rules go here */"
+  },
+  {
+    "objectID": "css.html#how-this-website-uses-scss",
+    "href": "css.html#how-this-website-uses-scss",
+    "title": "CSS and SCSS in Quarto",
+    "section": "",
+    "text": "The _quarto.yml file applies styles.scss to the entire website:\nformat:\n  html:\n    theme:\n      - cosmo\n      - styles.scss\nThe stylesheet uses variables for reusable design decisions:\n/*-- scss:defaults --*/\n\n$primary: #0f766e;\n$body-bg: #fffdf8;\n$body-color: #243b53;"
+  },
+  {
+    "objectID": "css.html#styling-a-class",
+    "href": "css.html#styling-a-class",
+    "title": "CSS and SCSS in Quarto",
+    "section": "",
+    "text": "The following SCSS creates a reusable card style:\n/*-- scss:rules --*/\n\n.simple-card {\n  background: #ffffff;\n  border: 1px solid #d9e2ec;\n  border-radius: 8px;\n  padding: 1rem;\n}\nThe class can then be used in a QMD file:\n::: {.simple-card}\n### A simple card\n\nThis content receives the reusable style.\n:::\n\n\nThis card uses the .simple-card class from styles.scss."
+  },
+  {
+    "objectID": "css.html#why-styling-is-useful",
+    "href": "css.html#why-styling-is-useful",
+    "title": "CSS and SCSS in Quarto",
+    "section": "",
+    "text": "It creates a consistent appearance across pages.\nIt makes headings and sections easier to scan.\nIt helps important links and notes stand out.\nIt allows the layout to work on different screen sizes.\nIt separates content from presentation."
+  },
+  {
+    "objectID": "css.html#scss-layer-boundaries",
+    "href": "css.html#scss-layer-boundaries",
+    "title": "CSS and SCSS in Quarto",
+    "section": "",
+    "text": "The comments below are required by newer versions of Quarto when an SCSS file is used as a theme layer:\n/*-- scss:defaults --*/\n/* variables go here */\n\n/*-- scss:rules --*/\n/* style rules go here */"
+  }
+]
