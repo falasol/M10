@@ -1,0 +1,53 @@
+---
+title: "Listings in Quarto"
+description: "How Quarto Listings organize portfolio pages using metadata."
+listing:
+  contents: projects
+  type: grid
+  fields: [title, description, date, categories]
+  sort: "date desc"
+  filter-ui: [categories]
+---
+
+# Listings in Quarto
+
+A Quarto Listing creates an index of related pages. It is useful for a portfolio because each project can be stored in its own file while Quarto automatically organizes the collection.
+
+## Why use a Listing?
+
+Listings help visitors:
+
+- Scan several projects quickly
+- Filter projects by category
+- Read a short description before opening a page
+- Find the most recent work first
+
+## Listing configuration
+
+The listing on this page is created with the following YAML:
+
+```yaml
+listing:
+  contents: projects
+  type: grid
+  fields: [title, description, date, categories]
+  sort: "date desc"
+  filter-ui: [categories]
+```
+
+The `contents` option tells Quarto to read pages from the `projects/` folder. The other options control the layout, displayed metadata, sorting, and filtering.
+
+## Project metadata
+
+Each project page can contain front matter like this:
+
+```yaml
+---
+title: "Avenue Shabu: Growth in Repeat Guests"
+description: "A CRM and customer analytics project about profitable repeat visits."
+date: 2026-10-23
+categories: [CRM, retention, customer analytics]
+---
+```
+
+Adding another project only requires adding another QMD file to the `projects/` folder.

@@ -1,0 +1,55 @@
+---
+title: "Frank Renn | Digital Marketing Portfolio"
+description: "A simple Quarto portfolio about digital analytics, CRM, and customer retention."
+---
+
+::: {.hero}
+# Frank Renn
+
+## Digital marketing, analytics, and CRM
+
+I am a digital marketing professional and Master of Science in Digital Marketing student. I connect customer behavior, marketing technology, and business outcomes to help organizations make better decisions.
+:::
+
+<img src="photo.jpeg" class="profile-photo" width="220" alt="Frank Renn profile photo">
+
+## About me
+
+My interests are digital analytics, customer relationship management, lifecycle marketing, and retention. I enjoy turning a broad business question into measurable events, useful customer segments, and a practical test.
+
+## Career aspirations
+
+I am interested in future roles in:
+
+- Digital analytics
+- CRM and lifecycle marketing
+- Marketing operations
+- Customer intelligence and retention
+
+I want to work on teams that use data and experimentation to improve the customer experience and long-term customer value.
+
+## Skills
+
+- Google Analytics 4 and Google Tag Manager
+- Event design, UTM tracking, tag implementation, and QA
+- Toast Guestbook, CRM, and loyalty concepts
+- RFM and lifecycle segmentation
+- Email and SMS campaign measurement
+- Customer satisfaction research and survey design
+- Retention analysis and treatment/holdout testing
+- Dashboard development and stakeholder communication
+
+## Education
+
+### Master of Science in Digital Marketing
+
+**Current program · 2026–2027**
+
+My coursework and projects focus on digital measurement, customer analytics, CRM, marketing strategy, research methods, and communicating findings to decision makers.
+
+## Submission links
+
+Replace the placeholders below after publishing your website:
+
+- [GitHub Pages website](https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/)
+- [GitHub repository](https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)

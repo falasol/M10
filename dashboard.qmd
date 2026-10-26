@@ -1,0 +1,216 @@
+---
+title: "Case 31 Member Survey Dashboard"
+description: "A descriptive dashboard showcasing the Case 31 SPSS survey data."
+format:
+  dashboard:
+    orientation: rows
+    scrolling: true
+    theme: [cosmo, styles.scss]
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+library(haven)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(scales)
+
+case31 <- read_sav("Case 31 Data_efcu_1.sav")
+
+service_labels <- c(
+  q3 = "Courteous",
+  q4 = "Helpful",
+  q5 = "Professional",
+  q6 = "Available"
+)
+
+service_summary <- bind_rows(lapply(names(service_labels), function(variable) {
+  tibble(
+    dimension = unname(service_labels[[variable]]),
+    score = as.numeric(case31[[variable]])
+  )
+})) |>
+  filter(!is.na(score)) |>
+  group_by(dimension) |>
+  summarise(
+    mean_score = mean(score),
+    responses = n(),
+    .groups = "drop"
+  )
+
+perception_labels <- c(
+  q30 = "Rates are lower",
+  q31 = "Confidential",
+  q32 = "Prompt",
+  q33 = "Meets member needs",
+  q34 = "Loan applications are simple"
+)
+
+perception_summary <- bind_rows(lapply(names(perception_labels), function(variable) {
+  tibble(
+    dimension = unname(perception_labels[[variable]]),
+    score = as.numeric(case31[[variable]])
+  )
+})) |>
+  filter(!is.na(score)) |>
+  group_by(dimension) |>
+  summarise(mean_score = mean(score), .groups = "drop")
+
+overall_code <- as.numeric(case31$q37)
+overall_labels <- c("Excellent", "Good", "Average", "Poor", "Very Poor", "No opinion")
+overall_summary <- tibble(
+  rating = factor(overall_code, levels = 1:6, labels = overall_labels)
+) |>
+  count(rating, .drop = FALSE)
+
+valid_overall <- !is.na(overall_code) & overall_code %in% 1:5
+positive_share <- mean(overall_code[valid_overall] %in% c(1, 2))
+
+product_labels <- c(
+  q13 = "Regular share account",
+  q14 = "Special subaccounts",
+  q15 = "Christmas club account",
+  q16 = "IRA",
+  q17 = "Master credit card",
+  q18 = "Signature loans",
+  q19 = "New car loans",
+  q20 = "Late-model car loans",
+  q21 = "Older-model car loans",
+  q22 = "Household-goods loans",
+  q23 = "Recreational loans",
+  q24 = "Share-collateralized loan",
+  q25 = "IRA loans",
+  q26 = "Line-of-credit loans"
+)
+
+product_summary <- bind_rows(lapply(names(product_labels), function(variable) {
+  values <- as.numeric(case31[[variable]])
+  valid <- !is.na(values) & values %in% c(1, 2)
+  tibble(
+    product = unname(product_labels[[variable]]),
+    used_rate = if (sum(valid) > 0) mean(values[valid] == 1) else NA_real_,
+    valid_responses = sum(valid)
+  )
+})) |>
+  filter(!is.na(used_rate)) |>
+  arrange(desc(used_rate))
+
+employee_mean <- mean(case31$OverallEmployeePerformace, na.rm = TRUE)
+top_service <- service_summary$dimension[which.max(service_summary$mean_score)]
+top_product <- product_summary$product[1]
+top_product_rate <- product_summary$used_rate[1]
+```
+
+## Row {height="180px"}
+
+### Survey responses
+
+::: {.metric}
+```{r, results="asis"}
+cat(sprintf("<strong>%s</strong>survey records", comma(nrow(case31))))
+```
+:::
+
+### Employee service average
+
+::: {.metric}
+```{r, results="asis"}
+cat(sprintf("<strong>%.2f / 5</strong>across four service dimensions", employee_mean))
+```
+:::
+
+### Positive overall rating
+
+::: {.metric}
+```{r, results="asis"}
+cat(sprintf("<strong>%s</strong>Excellent or Good", percent(positive_share, accuracy = 0.1)))
+```
+:::
+
+### Data source
+
+::: {.metric}
+```{r, results="asis"}
+cat("<strong>Case 31</strong>SPSS survey file")
+```
+:::
+
+## Row
+
+### Employee service dimensions
+
+```{r}
+ggplot(service_summary, aes(x = mean_score, y = reorder(dimension, mean_score))) +
+  geom_col(fill = "#0f766e", width = 0.65) +
+  geom_text(aes(label = sprintf("%.2f", mean_score)), hjust = -0.15, color = "#243b53") +
+  scale_x_continuous(limits = c(0, 5.3), breaks = 1:5) +
+  labs(x = "Mean response (1–5)", y = NULL) +
+  theme_minimal(base_size = 12) +
+  theme(panel.grid.major.y = element_blank())
+```
+
+### Overall rating distribution
+
+```{r}
+ggplot(overall_summary, aes(x = rating, y = n)) +
+  geom_col(fill = "#2a9d8f", width = 0.7) +
+  geom_text(aes(label = n), vjust = -0.35, color = "#243b53") +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.12))) +
+  labs(x = NULL, y = "Responses") +
+  theme_minimal(base_size = 12) +
+  theme(panel.grid.major.x = element_blank(), axis.text.x = element_text(angle = 30, hjust = 1))
+```
+
+## Row
+
+### Credit-union perceptions
+
+```{r}
+ggplot(perception_summary, aes(x = mean_score, y = reorder(dimension, mean_score))) +
+  geom_col(fill = "#457b9d", width = 0.65) +
+  geom_text(aes(label = sprintf("%.2f", mean_score)), hjust = -0.15, color = "#243b53") +
+  scale_x_continuous(limits = c(0, 5.3), breaks = 1:5) +
+  labs(x = "Mean agreement (1–5)", y = NULL) +
+  theme_minimal(base_size = 12) +
+  theme(panel.grid.major.y = element_blank())
+```
+
+### Product awareness and use
+
+```{r}
+product_plot <- product_summary |>
+  slice_head(n = 10) |>
+  mutate(product = reorder(product, used_rate))
+
+ggplot(product_plot, aes(x = used_rate, y = product)) +
+  geom_col(fill = "#e76f51", width = 0.65) +
+  geom_text(aes(label = percent(used_rate, accuracy = 1)), hjust = -0.15, color = "#243b53") +
+  scale_x_continuous(labels = percent, limits = c(0, 1.08), expand = c(0, 0)) +
+  labs(x = "Used among valid responses", y = "Top 10 products by use rate") +
+  theme_minimal(base_size = 12) +
+  theme(panel.grid.major.y = element_blank())
+```
+
+## Row
+
+### What stands out
+
+- The strongest employee-service dimension was **`r top_service`**, based on its mean rating.
+- Among valid overall-rating responses, **`r percent(positive_share, accuracy = 0.1)`** were rated Excellent or Good.
+- The most-used product in the available awareness/use variables was **`r top_product`**, used by **`r percent(top_product_rate, accuracy = 1)`** of valid responses.
+
+### Interpretation and limitations
+
+- This page provides descriptive summaries of **128 Case 31 survey records**; it does not display individual responses.
+- Ratings use the scales supplied in the SPSS file. Higher mean scores indicate more favorable responses for the employee-service and credit-union-perception items.
+- Product use rates are calculated only among valid responses coded as “Aware and Have Used” or “Aware but Have Not Used.”
+- The dashboard describes this sample and should not be generalized to all members without information about the sampling design, response rate, and population.
+- The source file contains additional variables that are not all shown here, including loan status, headquarters status, and statement-related questions.
+
+::: {.callout-note}
+The source file is `Case 31 Data_efcu_1.sav`. The dashboard uses aggregated results for demonstration and portfolio presentation. It does not claim to represent Avenue Shabu customer data or the Avenue Shabu culminating-experience project.
+:::

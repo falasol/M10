@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Profile photo placeholder</title>
+  <desc id="desc">A simple illustrated profile placeholder with the initials FR.</desc>
+  <rect width="400" height="400" rx="24" fill="#e8f5f2"/>
+  <circle cx="200" cy="155" r="65" fill="#0f766e"/>
+  <path d="M92 340c12-82 53-118 108-118s96 36 108 118" fill="#0f766e"/>
+  <text x="200" y="385" fill="#102a43" font-family="Arial, sans-serif" font-size="28" text-anchor="middle">FR</text>
+</svg>

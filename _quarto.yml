@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "Frank Renn | Digital Marketing Portfolio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: dashboard.qmd
+        text: Project Dashboard
+      - href: css.qmd
+        text: CSS/SCSS
+      - href: listings.qmd
+        text: Listings
+  page-footer:
+    left: "© 2026 Frank Renn"
+    right: "Built with Quarto"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    toc: false
+    smooth-scroll: true

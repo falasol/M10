@@ -1,0 +1,10 @@
+---
+title: "Digital Analytics and Tag QA"
+description: "A measurement implementation project involving events, tags, and conversion tracking."
+date: 2026-09-15
+categories: [GA4, GTM, measurement]
+---
+
+# Digital Analytics and Tag QA
+
+This project focuses on translating measurement requirements into reliable events, tags, parameters, and conversion checks.

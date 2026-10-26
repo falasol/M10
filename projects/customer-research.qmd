@@ -1,0 +1,10 @@
+---
+title: "Customer Research and Retention"
+description: "Connecting satisfaction research with revisit intention and CRM activation."
+date: 2026-08-30
+categories: [research, satisfaction, retention]
+---
+
+# Customer Research and Retention
+
+This project focuses on survey design, construct mapping, customer segmentation variables, and connecting customer feedback with retention decisions.

@@ -1,0 +1,83 @@
+---
+title: "CSS and SCSS in Quarto"
+description: "A simple explanation of how CSS and SCSS style this Quarto website."
+---
+
+# CSS and SCSS in Quarto
+
+CSS controls the appearance of a website. It can change colors, fonts, spacing, borders, layout, and responsive behavior.
+
+SCSS is an extension of CSS. It allows the author to use variables and other features that make a stylesheet easier to maintain.
+
+## How this website uses SCSS
+
+The `_quarto.yml` file applies `styles.scss` to the entire website:
+
+```yaml
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+```
+
+The stylesheet uses variables for reusable design decisions:
+
+```scss
+/*-- scss:defaults --*/
+
+$primary: #0f766e;
+$body-bg: #fffdf8;
+$body-color: #243b53;
+```
+
+## Styling a class
+
+The following SCSS creates a reusable card style:
+
+```scss
+/*-- scss:rules --*/
+
+.simple-card {
+  background: #ffffff;
+  border: 1px solid #d9e2ec;
+  border-radius: 8px;
+  padding: 1rem;
+}
+```
+
+The class can then be used in a QMD file:
+
+```markdown
+::: {.simple-card}
+### A simple card
+
+This content receives the reusable style.
+:::
+```
+
+::: {.simple-card}
+### Example styled card
+
+This card uses the `.simple-card` class from `styles.scss`.
+:::
+
+## Why styling is useful
+
+- It creates a consistent appearance across pages.
+- It makes headings and sections easier to scan.
+- It helps important links and notes stand out.
+- It allows the layout to work on different screen sizes.
+- It separates content from presentation.
+
+## SCSS layer boundaries
+
+The comments below are required by newer versions of Quarto when an SCSS file is used as a theme layer:
+
+```scss
+/*-- scss:defaults --*/
+/* variables go here */
+
+/*-- scss:rules --*/
+/* style rules go here */
+```
