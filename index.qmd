@@ -49,7 +49,5 @@ My coursework and projects focus on digital measurement, customer analytics, CRM
 
 ## Submission links
 
-Replace the placeholders below after publishing your website:
-
-- [GitHub Pages website](https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/)
-- [GitHub repository](https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+- [Published portfolio homepage](https://falasol.github.io/M10/_site/index.html)
+- [GitHub repository](https://github.com/falasol/M10)
