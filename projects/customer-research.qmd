@@ -3,6 +3,11 @@ title: "Customer Research and Retention"
 description: "Connecting satisfaction research with revisit intention and CRM activation."
 date: 2026-08-30
 categories: [research, satisfaction, retention]
+format:
+  html:
+    theme: [cosmo, ../styles.scss]
+    toc: false
+    smooth-scroll: true
 ---
 
 # Customer Research and Retention

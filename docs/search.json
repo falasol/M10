@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "projects/digital-analytics.html",
+    "href": "projects/digital-analytics.html",
+    "title": "Digital Analytics and Tag QA",
+    "section": "",
+    "text": "Digital Analytics and Tag QA\nThis project focuses on translating measurement requirements into reliable events, tags, parameters, and conversion checks."
+  },
+  {
+    "objectID": "projects/avenue-shabu.html",
+    "href": "projects/avenue-shabu.html",
+    "title": "Avenue Shabu: Growth in Repeat Guests",
+    "section": "",
+    "text": "Avenue Shabu: Growth in Repeat Guests\nThis MSDM culminating experience project connects Toast/POS data, customer experience research, CRM, loyalty, email/SMS campaigns, and retention measurement.\nThe goal is to identify practical interventions that increase repeat-visit frequency and customer value while considering campaign and reward costs."
+  },
+  {
     "objectID": "listings.html",
     "href": "listings.html",
     "title": "Listings in Quarto",
@@ -77,39 +91,18 @@
     "text": "Submission links\n\nPublished portfolio homepage\nGitHub repository"
   },
   {
-    "objectID": "projects/customer-research.html",
-    "href": "projects/customer-research.html",
-    "title": "Customer Research and Retention",
-    "section": "",
-    "text": "Customer Research and Retention\nThis project focuses on survey design, construct mapping, customer segmentation variables, and connecting customer feedback with retention decisions."
-  },
-  {
-    "objectID": "projects/avenue-shabu.html",
-    "href": "projects/avenue-shabu.html",
-    "title": "Avenue Shabu: Growth in Repeat Guests",
-    "section": "",
-    "text": "Avenue Shabu: Growth in Repeat Guests\nThis MSDM culminating experience project connects Toast/POS data, customer experience research, CRM, loyalty, email/SMS campaigns, and retention measurement.\nThe goal is to identify practical interventions that increase repeat-visit frequency and customer value while considering campaign and reward costs."
-  },
-  {
-    "objectID": "projects/digital-analytics.html",
-    "href": "projects/digital-analytics.html",
-    "title": "Digital Analytics and Tag QA",
-    "section": "",
-    "text": "Digital Analytics and Tag QA\nThis project focuses on translating measurement requirements into reliable events, tags, parameters, and conversion checks."
-  },
-  {
     "objectID": "css.html",
     "href": "css.html",
     "title": "CSS and SCSS in Quarto",
     "section": "",
-    "text": "CSS controls the appearance of a website. It can change colors, fonts, spacing, borders, layout, and responsive behavior.\nSCSS is an extension of CSS. It allows the author to use variables and other features that make a stylesheet easier to maintain.\n\n\nThe _quarto.yml file applies styles.scss to the entire website:\nformat:\n  html:\n    theme:\n      - cosmo\n      - styles.scss\nThe stylesheet uses variables for reusable design decisions:\n/*-- scss:defaults --*/\n\n$primary: #0f766e;\n$body-bg: #fffdf8;\n$body-color: #243b53;\n\n\n\nThe following SCSS creates a reusable card style:\n/*-- scss:rules --*/\n\n.simple-card {\n  background: #ffffff;\n  border: 1px solid #d9e2ec;\n  border-radius: 8px;\n  padding: 1rem;\n}\nThe class can then be used in a QMD file:\n::: {.simple-card}\n### A simple card\n\nThis content receives the reusable style.\n:::\n\n\nThis card uses the .simple-card class from styles.scss.\n\n\n\n\n\nIt creates a consistent appearance across pages.\nIt makes headings and sections easier to scan.\nIt helps important links and notes stand out.\nIt allows the layout to work on different screen sizes.\nIt separates content from presentation.\n\n\n\n\nThe comments below are required by newer versions of Quarto when an SCSS file is used as a theme layer:\n/*-- scss:defaults --*/\n/* variables go here */\n\n/*-- scss:rules --*/\n/* style rules go here */"
+    "text": "CSS controls the appearance of a website. It can change colors, fonts, spacing, borders, layout, and responsive behavior.\nSCSS is an extension of CSS. It allows the author to use variables and other features that make a stylesheet easier to maintain.\n\n\nEach portfolio page applies styles.scss alongside the Cosmo theme:\nformat:\n  html:\n    theme:\n      - cosmo\n      - styles.scss\nThe stylesheet uses variables for reusable design decisions:\n/*-- scss:defaults --*/\n\n$primary: #0f766e;\n$body-bg: #fffdf8;\n$body-color: #243b53;\n\n\n\nThe following SCSS creates a reusable card style:\n/*-- scss:rules --*/\n\n.simple-card {\n  background: #ffffff;\n  border: 1px solid #d9e2ec;\n  border-radius: 8px;\n  padding: 1rem;\n}\nThe class can then be used in a QMD file:\n::: {.simple-card}\n### A simple card\n\nThis content receives the reusable style.\n:::\n\n\nThis card uses the .simple-card class from styles.scss.\n\n\n\n\n\nIt creates a consistent appearance across pages.\nIt makes headings and sections easier to scan.\nIt helps important links and notes stand out.\nIt allows the layout to work on different screen sizes.\nIt separates content from presentation.\n\n\n\n\nThe comments below are required by newer versions of Quarto when an SCSS file is used as a theme layer:\n/*-- scss:defaults --*/\n/* variables go here */\n\n/*-- scss:rules --*/\n/* style rules go here */"
   },
   {
     "objectID": "css.html#how-this-website-uses-scss",
     "href": "css.html#how-this-website-uses-scss",
     "title": "CSS and SCSS in Quarto",
     "section": "",
-    "text": "The _quarto.yml file applies styles.scss to the entire website:\nformat:\n  html:\n    theme:\n      - cosmo\n      - styles.scss\nThe stylesheet uses variables for reusable design decisions:\n/*-- scss:defaults --*/\n\n$primary: #0f766e;\n$body-bg: #fffdf8;\n$body-color: #243b53;"
+    "text": "Each portfolio page applies styles.scss alongside the Cosmo theme:\nformat:\n  html:\n    theme:\n      - cosmo\n      - styles.scss\nThe stylesheet uses variables for reusable design decisions:\n/*-- scss:defaults --*/\n\n$primary: #0f766e;\n$body-bg: #fffdf8;\n$body-color: #243b53;"
   },
   {
     "objectID": "css.html#styling-a-class",
@@ -131,5 +124,47 @@
     "title": "CSS and SCSS in Quarto",
     "section": "",
     "text": "The comments below are required by newer versions of Quarto when an SCSS file is used as a theme layer:\n/*-- scss:defaults --*/\n/* variables go here */\n\n/*-- scss:rules --*/\n/* style rules go here */"
+  },
+  {
+    "objectID": "plan.html",
+    "href": "plan.html",
+    "title": "Portfolio Website Project Proposal",
+    "section": "",
+    "text": "The Home page will include:\n\nA brief professional introduction\nMarketing and analytics skills\nFeatured projects\nLinks to the project pages\nContact information\nLinks to GitHub, LinkedIn, and my resume"
+  },
+  {
+    "objectID": "plan.html#avenue-shabu-digital-marketing-and-crm-strategy",
+    "href": "plan.html#avenue-shabu-digital-marketing-and-crm-strategy",
+    "title": "Portfolio Website Project Proposal",
+    "section": "2.1 Avenue Shabu Digital Marketing and CRM Strategy",
+    "text": "2.1 Avenue Shabu Digital Marketing and CRM Strategy\n\nManagerial problem: Avenue Shabu needs to connect its digital marketing and CRM activities to customer visits, repeat visits, and revenue.\nTarget audience: Avenue Shabu’s owner and marketing team.\nObjective: Develop a digital marketing, CRM, and loyalty strategy that supports profitable repeat visits.\nMethods and impact: Conduct a channel audit, customer-lifecycle planning, and campaign measurement analysis to improve marketing decisions and support the loyalty program launch."
+  },
+  {
+    "objectID": "plan.html#wellness-ranch-therapy-digital-marketing-project",
+    "href": "plan.html#wellness-ranch-therapy-digital-marketing-project",
+    "title": "Portfolio Website Project Proposal",
+    "section": "2.2 Wellness Ranch Therapy Digital Marketing Project",
+    "text": "2.2 Wellness Ranch Therapy Digital Marketing Project\n\nData and sources: Wellness Ranch project materials, website and marketing information, and available enrollment or retention data.\nManagerial problem: Wellness Ranch needs to improve awareness, customer engagement, and enrollment or retention.\nTarget audience: Wellness Ranch leadership and marketing decision makers.\nObjective: Identify marketing opportunities that can improve customer acquisition and engagement.\nMethods and impact: Analyze target audiences, digital channels, and customer behavior to recommend practical marketing improvements."
+  },
+  {
+    "objectID": "plan.html#avenue-shabu-loyalty-program-results-and-ga4-analysis",
+    "href": "plan.html#avenue-shabu-loyalty-program-results-and-ga4-analysis",
+    "title": "Portfolio Website Project Proposal",
+    "section": "3.1 Avenue Shabu Loyalty Program Results and GA4 Analysis",
+    "text": "3.1 Avenue Shabu Loyalty Program Results and GA4 Analysis\n\nData and sources: Toast customer and transaction data, loyalty enrollment and redemption data, email/SMS campaign data, and GA4 website data.\nManagerial problem: Avenue Shabu needs to determine whether the loyalty program and digital channels are increasing customer engagement and repeat visits.\nTarget audience: Avenue Shabu’s owner, marketing manager, and operations team.\nResearch questions: Which customer segments return more frequently? Does loyalty enrollment relate to repeat visits? Which website channels and actions support marketing goals?\nMethods and impact: Use customer segmentation, retention analysis, loyalty results, GA4 traffic and conversion analysis, and campaign comparisons to evaluate program performance and recommend improvements."
+  },
+  {
+    "objectID": "plan.html#walmart-sales-prediction-project",
+    "href": "plan.html#walmart-sales-prediction-project",
+    "title": "Portfolio Website Project Proposal",
+    "section": "3.2 Walmart Sales Prediction Project",
+    "text": "3.2 Walmart Sales Prediction Project\n\nData and sources: Historical Walmart sales data and related time-based or economic variables.\nManagerial problem: Walmart needs accurate sales predictions to support inventory, staffing, and operational planning.\nTarget audience: Retail managers, sales planners, and operations teams.\nObjective: Predict future sales and identify factors associated with changes in demand.\nMethods and impact: Use exploratory analysis, regression, time-series forecasting, and forecast accuracy measures to support better business planning."
+  },
+  {
+    "objectID": "projects/customer-research.html",
+    "href": "projects/customer-research.html",
+    "title": "Customer Research and Retention",
+    "section": "",
+    "text": "Customer Research and Retention\nThis project focuses on survey design, construct mapping, customer segmentation variables, and connecting customer feedback with retention decisions."
   }
 ]

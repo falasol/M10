@@ -3,6 +3,11 @@ title: "Avenue Shabu: Growth in Repeat Guests"
 description: "A CRM and customer analytics project about profitable repeat visits."
 date: 2026-10-23
 categories: [CRM, retention, customer analytics]
+format:
+  html:
+    theme: [cosmo, ../styles.scss]
+    toc: false
+    smooth-scroll: true
 ---
 
 # Avenue Shabu: Growth in Repeat Guests

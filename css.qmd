@@ -1,6 +1,11 @@
 ---
 title: "CSS and SCSS in Quarto"
 description: "A simple explanation of how CSS and SCSS style this Quarto website."
+format:
+  html:
+    theme: [cosmo, styles.scss]
+    toc: false
+    smooth-scroll: true
 ---
 
 # CSS and SCSS in Quarto
@@ -11,7 +16,7 @@ SCSS is an extension of CSS. It allows the author to use variables and other fea
 
 ## How this website uses SCSS
 
-The `_quarto.yml` file applies `styles.scss` to the entire website:
+Each portfolio page applies `styles.scss` alongside the Cosmo theme:
 
 ```yaml
 format:

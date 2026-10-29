@@ -1,6 +1,11 @@
 ---
 title: "Listings in Quarto"
 description: "How Quarto Listings organize portfolio pages using metadata."
+format:
+  html:
+    theme: [cosmo, styles.scss]
+    toc: false
+    smooth-scroll: true
 listing:
   contents: projects
   type: grid

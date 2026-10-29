@@ -3,6 +3,11 @@ title: "Digital Analytics and Tag QA"
 description: "A measurement implementation project involving events, tags, and conversion tracking."
 date: 2026-09-15
 categories: [GA4, GTM, measurement]
+format:
+  html:
+    theme: [cosmo, ../styles.scss]
+    toc: false
+    smooth-scroll: true
 ---
 
 # Digital Analytics and Tag QA

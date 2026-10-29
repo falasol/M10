@@ -1,6 +1,13 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - index.qmd
+    - dashboard.qmd
+    - css.qmd
+    - listings.qmd
+    - plan.qmd
+    - projects/
 
 website:
   title: "Frank Renn | Digital Marketing Portfolio"
@@ -17,11 +24,3 @@ website:
   page-footer:
     left: "© 2026 Frank Renn"
     right: "Built with Quarto"
-
-format:
-  html:
-    theme:
-      - cosmo
-      - styles.scss
-    toc: false
-    smooth-scroll: true

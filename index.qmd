@@ -1,6 +1,11 @@
 ---
 title: "Frank Renn | Digital Marketing Portfolio"
 description: "A simple Quarto portfolio about digital analytics, CRM, and customer retention."
+format:
+  html:
+    theme: [cosmo, styles.scss]
+    toc: false
+    smooth-scroll: true
 ---
 
 ::: {.hero}

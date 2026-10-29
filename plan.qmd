@@ -1,0 +1,84 @@
+---
+title: "Portfolio Website Project Proposal"
+author: "Frank Renn"
+date: today
+format:
+  html:
+    theme: default
+    toc: true
+    number-sections: true
+    embed-resources: true
+navbar: false
+sidebar: false
+page-footer: false
+---
+
+# Home Page
+
+The Home page will include:
+
+- A brief professional introduction
+- Marketing and analytics skills
+- Featured projects
+- Links to the project pages
+- Contact information
+- Links to GitHub, LinkedIn, and my resume
+
+# Digital Marketing Projects Page
+
+This page will include two digital marketing projects.
+
+## Avenue Shabu Digital Marketing and CRM Strategy
+- **Managerial problem:** Avenue Shabu needs to connect its digital marketing and CRM activities to customer visits, repeat visits, and revenue.
+- **Target audience:** Avenue Shabu’s owner and marketing team.
+- **Objective:** Develop a digital marketing, CRM, and loyalty strategy that supports profitable repeat visits.
+- **Methods and impact:** Conduct a channel audit, customer-lifecycle planning, and campaign measurement analysis to improve marketing decisions and support the loyalty program launch.
+
+## Wellness Ranch Therapy Digital Marketing Project
+
+- **Data and sources:** Wellness Ranch project materials, website and marketing information, and available enrollment or retention data.
+- **Managerial problem:** Wellness Ranch needs to improve awareness, customer engagement, and enrollment or retention.
+- **Target audience:** Wellness Ranch leadership and marketing decision makers.
+- **Objective:** Identify marketing opportunities that can improve customer acquisition and engagement.
+- **Methods and impact:** Analyze target audiences, digital channels, and customer behavior to recommend practical marketing improvements.
+
+# Marketing Analytics Page
+
+## Avenue Shabu Loyalty Program Results and GA4 Analysis
+
+- **Data and sources:** Toast customer and transaction data, loyalty enrollment and redemption data, email/SMS campaign data, and GA4 website data.
+- **Managerial problem:** Avenue Shabu needs to determine whether the loyalty program and digital channels are increasing customer engagement and repeat visits.
+- **Target audience:** Avenue Shabu’s owner, marketing manager, and operations team.
+- **Research questions:** Which customer segments return more frequently? Does loyalty enrollment relate to repeat visits? Which website channels and actions support marketing goals?
+- **Methods and impact:** Use customer segmentation, retention analysis, loyalty results, GA4 traffic and conversion analysis, and campaign comparisons to evaluate program performance and recommend improvements.
+
+## Walmart Sales Prediction Project
+
+- **Data and sources:** Historical Walmart sales data and related time-based or economic variables.
+- **Managerial problem:** Walmart needs accurate sales predictions to support inventory, staffing, and operational planning.
+- **Target audience:** Retail managers, sales planners, and operations teams.
+- **Objective:** Predict future sales and identify factors associated with changes in demand.
+- **Methods and impact:** Use exploratory analysis, regression, time-series forecasting, and forecast accuracy measures to support better business planning.
+
+# Reveal.js Presentation: Integrated Marketing and Analytics Portfolio
+
+This presentation will bring together the Avenue Shabu, Wellness Ranch, and Walmart projects.
+
+It will summarize:
+
+- The managerial problems
+- Data sources
+- Analytical and marketing methods
+- Major findings or expected findings
+- Business recommendations
+- Expected impact
+
+The presentation will target recruiters, managers, instructors, and potential clients. It will be included under the **Marketing Analytics Projects** page rather than as a separate top-level website tab.
+
+# Resume Page
+
+The Resume page will include a link to my current resume:
+
+[View Resume](Frank_Renn_Resume.pdf)
+
+The resume will be uploaded after the Avenue Shabu loyalty program launches.
